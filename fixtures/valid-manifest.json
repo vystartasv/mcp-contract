@@ -1,0 +1,14 @@
+{
+  "tools": [
+    {
+      "name": "echo",
+      "description": "Return the supplied text.",
+      "inputSchema": {
+        "type": "object",
+        "properties": { "text": { "type": "string" } },
+        "required": ["text"],
+        "additionalProperties": false
+      }
+    }
+  ]
+}

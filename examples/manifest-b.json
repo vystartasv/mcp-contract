@@ -1,0 +1,1 @@
+{"tools":[{"name":"echo","description":"Return text with changes","inputSchema":{"type":"object"}},{"name":"new","description":"New tool","inputSchema":{"type":"object"}}]}

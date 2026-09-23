@@ -1,0 +1,6 @@
+{
+  "tools": [
+    { "name": "bad name", "description": "", "inputSchema": { "type": "date" } },
+    { "name": "bad name", "description": "duplicate", "inputSchema": { "type": "object" } }
+  ]
+}

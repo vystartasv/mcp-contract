@@ -1,0 +1,19 @@
+{
+  "name": "mcp-contract",
+  "version": "0.1.0",
+  "description": "Offline contract checks for MCP-like tool manifests and JSON-RPC fixture transcripts.",
+  "type": "module",
+  "bin": {
+    "mcp-contract": "dist/mcp-contract"
+  },
+  "scripts": {
+    "test": "bun scripts/run-tests.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "bun build src/cli.ts --compile --outfile dist/mcp-contract",
+    "check": "bun run typecheck && bun run test && bun run build"
+  },
+  "devDependencies": {
+    "bun-types": "^1.3.14",
+    "typescript": "^5.9.2"
+  }
+}

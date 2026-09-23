@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.14
+      - run: bun install --frozen-lockfile
+      - run: bun run check
+      - run: ./dist/mcp-contract check fixtures/valid-manifest.json
+      - run: ./dist/mcp-contract check fixtures/valid-transcript.jsonl
+      - run: ./dist/mcp-contract diff examples/manifest-a.json examples/manifest-b.json
