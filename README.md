@@ -1,5 +1,7 @@
 # mcp-contract
 
+Project site: https://vystartasv.github.io/mcp-contract/
+
 `mcp-contract` is a dependency-free, local-first CLI that validates MCP-like tool manifests and JSON-RPC fixture transcripts without starting a server or sending network traffic.
 
 It is a contract checker, not an MCP implementation.

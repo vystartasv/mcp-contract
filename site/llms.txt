@@ -1,0 +1,8 @@
+# mcp-contract
+
+Offline, dependency-free checks for MCP-like tool manifests and JSON-RPC fixture transcripts.
+
+- Site: https://vystartasv.github.io/mcp-contract/
+- Source: https://github.com/vystartasv/mcp-contract
+- Scope: local validation, deterministic diffs, bounded diagnostics, escaped reports.
+- Non-goals: MCP server, transport, network, tool execution, agent framework, telemetry, generic JSON Schema.
